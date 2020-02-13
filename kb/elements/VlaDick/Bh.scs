@@ -1,0 +1,87 @@
+elem_Bh
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_bohrium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Bh.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+<- group_seven;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_seven;
+
+<- metal;
+
+<= nrel_inclusion: oxidation_state_plus_seven; 
+<= nrel_inclusion: valence_seven;
+
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:113(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Bh;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Bh
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (борий, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Bh] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 6s<sup>2</sup>p<sup>6</sup>d<sup>5</sup> 7s<sup>2</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис. (химический элемент борий)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Bohrium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+
+Definition_of_bohrium
+=> nrel_main_idtf:
+	[Опр. (борий)]
+	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Bh <- number;
+=> nrel_main_idtf:[262](*<-lang_ru;; <- lang_en;;*);;

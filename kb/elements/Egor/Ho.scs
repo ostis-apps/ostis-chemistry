@@ -1,0 +1,101 @@
+elem_Ho
+=> nrel_main_idtf:
+	[holmium atom](*<- lang_en;;*);
+	[атом гольмия](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_holmium
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Ho.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+
+<- group_three;
+<- period_six;
+=> nrel_periodic_number: sixty_seven;
+
+<- metal;
+
+<- oxidation_state_plus_three; 
+<- valence_three; 
+
+
+=> nrel_atomic_radius: atomic_radius_of_Ho
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:179(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_Ho
+			(* <- number;;
+			=> nrel_main_idtf:[1,23](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+
+=> nrel_covalent_radius: covalent_radius_of_Ho
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:158(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: atomic_mass_of_Ho
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Ho;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Ho
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (атом гольмия, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Xe] 4f<sup>11</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Ho
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом гольмия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(holmium atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Holmium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+atomic_mass_Ho <- number;
+=> nrel_main_idtf:[164,93032(2)](*<-lang_ru;; <- lang_en;;*);;
+
+Definition_of_holmium
+=> nrel_main_idtf:
+	[Опр.(атом гольмия)]
+	(* <- lang_ru;;	*);
+	[Def.(holmium atom)]
+	(* <- lang_en;;	*);;

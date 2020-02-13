@@ -1,0 +1,100 @@
+elem_K
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_kalium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/K.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_one;
+<- period_four;
+=> nrel_periodic_number: nineteen;
+
+<- metal;
+
+
+<= nrel_inclusion: oxidation_state_plus_one; 
+<= nrel_inclusion: valence_one;
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:277(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_K;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:203(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_K;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_K
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (калий, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [K] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup> 4s<sup>1</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис. (химический элемент калий)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Potassium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+
+
+Definition_of_kalium
+=> nrel_main_idtf:
+	[Опр. (калий)]
+	(* <- lang_ru;;	*);;
+
+
+atomic_mass_K <- number;
+=> nrel_main_idtf:[39,1](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_K <- number;
+=> nrel_main_idtf:[0,82](*<-lang_ru;; <- lang_en;;*);;

@@ -1,0 +1,79 @@
+elem_Db
+=> nrel_main_idtf:
+	[dubnium atom](*<- lang_en;;*);
+	[атом дубния](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_dubnium
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Db.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+
+<- group_five;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_five;
+
+<- metal;
+
+<- nrel_inclusion: oxidation_state_plus_three; oxidation_state_plus_four; oxidation_state_plus_five;
+<- nrel_inclusion: valence_five;
+
+
+=> nrel_atomic_mass: atomic_mass_of_Db
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Db;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Db
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дубний, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Rn] 5f<sup>14</sup>6d<sup>3</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Db
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом дубния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(dubnium atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Dubnium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+atomic_mass_Db <- number;
+=> nrel_main_idtf:[268](*<-lang_ru;; <- lang_en;;*);;
+
+Definition_of_dubnium
+=> nrel_main_idtf:
+	[Опр.(атом дубния)]
+	(* <- lang_ru;;	*);
+	[Def.(dubnium atom)]
+	(* <- lang_en;;	*);;

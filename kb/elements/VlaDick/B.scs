@@ -1,0 +1,101 @@
+elem_B
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_borum
+	(*
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:"file://htmls/B.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+
+<- group_thirteen;
+<- period_two;
+=> nrel_periodic_number: five;
+<= nrel_discovery_year: 1808;
+
+<- nonmetal;
+
+
+<= nrel_inclusion: oxidation_state_plus_three;
+<= nrel_inclusion: valence_three; valence_four;
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:117(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_B;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:82(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_B;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_B
+	(*
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (бор, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [B] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>1</sup>]
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис. (химический элемент бор)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Borum.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+
+
+Definition_of_borum
+=> nrel_main_idtf:
+	[Опр. (бор)]
+	(* <- lang_ru;;	*);;
+
+atomic_mass_B <- number;
+=> nrel_main_idtf:[10,81](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_B <- number;
+=> nrel_main_idtf:[2,04](*<-lang_ru;; <- lang_en;;*);;
