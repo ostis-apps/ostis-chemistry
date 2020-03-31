@@ -1,0 +1,108 @@
+elem_Mo
+	=> nrel_main_idtf: 
+		[molybdaenum atom] (* <-lang_en;;*);
+		[атом молибдена] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Mo] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Mo] (* <-lang_ru;;*);
+<- chemical_element;
+<- sc_node_not_relation;
+<- rrel_key_sc_element: definition_of_Molybdaenum
+(* 
+	=> nrel_main_idtf: [Опр. (атом молибдена)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Молибден</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>    шестой   <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 5-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов. </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+=> nrel_periodic_number: forty_two;
+
+<- transition_metal;
+<- siderophile;
+
+<- group_six;
+<- period_five;
+<- oxidation_state_plus_three; oxidation_state_plus_six;
+<- valence_three; valence_six;
+
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (атом молибдена)] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/elem_Mo.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- microelement;
+
+=> nrel_biological_significance: ...
+(*
+	-> antioxidants_work;;
+	-> tissue_respiration;;
+	-> amino_acid_synthesis;;
+	-> nitrogen_accumulation;;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_thirty_nine;;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Mo;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_thirty;;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Mo;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Mo
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (атом молибдена, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Kr] 4d<sup>5</sup>5s<sup>1</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_Mo <- number;
+=> nrel_main_idtf:[95,96(2)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Mo <- number;
+=> nrel_main_idtf:[2,16](*<-lang_ru;; <- lang_en;;*);;

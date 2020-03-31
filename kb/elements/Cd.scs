@@ -1,0 +1,102 @@
+elem_Cd
+=> nrel_main_idtf:
+	[cadmium atom](*<- lang_en;;*);
+	[атом кадмия](*<- lang_ru;;*);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_cadmium
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Cd.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+<- group_twelve;
+<- period_five;
+=> nrel_periodic_number: forty_eight;
+
+<- metal;
+
+<- oxidation_state_plus_two;
+<- nrel_inclusion: valence_two;
+
+
+=> nrel_atomic_radius: atomic_radius_of_Cd
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:154(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_Cd
+			(* <- number;;
+			=> nrel_main_idtf:[1,69](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+=> nrel_covalent_radius: covalent_radius_of_Cd
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:148(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: atomic_mass_of_Cd
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Cd;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Cd
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (атом кадмия, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Kr] 4d<sup>10</sup>5s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Cd
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом кадмия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(cadmium atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Cadmium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+atomic_mass_Cd <- number;
+=> nrel_main_idtf:[112,411(8)](*<-lang_ru;; <- lang_en;;*);;
+
+
+Definition_of_cadmium
+=> nrel_main_idtf:
+	[Опр.(атом кадмия)]
+	(* <- lang_ru;;	*);
+	[Def.(cadmium atom)]
+	(* <- lang_en;;	*);;

@@ -1,0 +1,103 @@
+elem_Co
+=> nrel_main_idtf:
+	[cobaltum atom](*<- lang_en;;*);
+	[атом кобальта](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_cobaltum
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:"file://htmls/Co.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+
+			*);;
+	*);
+
+<- group_nine;
+<- period_four;
+=> nrel_periodic_number: twenty_seven;
+<= nrel_discovery_year: 1735;
+
+<- metal;
+
+<- oxidation_state_plus_three; oxidation_state_plus_four; oxidation_state_plus_one;oxidation_state_plus_two;
+<- valence_three; valence_four; valence_one; valence_two;
+
+
+=> nrel_atomic_radius: atomic_radius_of_Co
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:125(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_Co
+			(* <- number;;
+			=> nrel_main_idtf:[1,88](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+
+=> nrel_covalent_radius: covalent_radius_of_Co
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:116(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: atomic_mass_of_Co
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Co;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Co
+	(*
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (атом кобальта, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Ar] 3d<sup>7</sup>4s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Co
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом кобальта)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(cobaltum atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Cobaltum.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+atomic_mass_Co <- number;
+=> nrel_main_idtf:[58,933195(5)](*<-lang_ru;; <- lang_en;;*);;
+
+Definition_of_cobaltum
+=> nrel_main_idtf:
+	[Опр.(атом кобальта)]
+	(* <- lang_ru;;	*);
+	[Def.(cobaltum atom)]
+	(* <- lang_en;;	*);;

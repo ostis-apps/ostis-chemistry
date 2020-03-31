@@ -1,0 +1,100 @@
+elem_Ba
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_barium
+	(*
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:"file://htmls/Ba.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_two;
+<- period_six;
+=> nrel_periodic_number: fifty_six;
+<= nrel_discovery_year: 1774;
+
+<- metal;
+
+<= nrel_inclusion: oxidation_state_plus_two;
+<= nrel_inclusion: valence_two;
+
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:278(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Ba;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:1.98(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Ba;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Ba
+	(*
+		<- explanation;;
+		=> nrel_main_idtf:
+			[Утв. (барай, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Ba] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 5s<sup>2</sup>p<sup>6</sup> 6s<sup>2</sup>]
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис. (химический элемент барий)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Barium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+
+Definition_of_barium
+=> nrel_main_idtf:
+	[Опр. (барий)]
+	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Ba <- number;
+=> nrel_main_idtf:[137,33](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Ba <- number;
+=> nrel_main_idtf:[0,89](*<-lang_ru;; <- lang_en;;*);;

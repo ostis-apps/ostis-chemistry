@@ -1,0 +1,77 @@
+elem_Fl
+=> nrel_main_idtf:
+	[flerovium atom](*<- lang_en;;*);
+	[атом флеровия](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_flerovium
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Fl.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+<- group_fourteen;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_fourteen;
+
+
+<- metal;
+
+
+
+=> nrel_atomic_mass: atomic_mass_of_Fl
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Fl;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Fl
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (атом флеровия, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Rn] 5f<sup>14</sup>6d<sup>10</sup>7s<sup>2</sup>7p<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Fl
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом флеровия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(flerovium atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Flerovium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+atomic_mass_Fl <- number;
+=> nrel_main_idtf:[289,190(4)](*<-lang_ru;; <- lang_en;;*);;
+
+Definition_of_flerovium
+=> nrel_main_idtf:
+	[Опр.(атом флеровия)]
+	(* <- lang_ru;;	*);
+	[Def.(flerovium atom)]
+	(* <- lang_en;;	*);;

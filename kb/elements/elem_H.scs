@@ -1,0 +1,122 @@
+12_3_years
+	=> nrel_main_idtf: [12.3 лет] (* <- lang_ru;; *);
+	<-quantity;
+	<=nrel_value:
+		...
+		(*
+			->rrel_year:12.3 (* <-number;; *);;
+		*);;
+
+elem_H
+	=> nrel_main_idtf: 
+		[hydrogenium atom] (* <-lang_en;;*);
+		[атом водорода] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom H] (* <-lang_en;;*);
+	=> nrel_idtf: [атом H] (* <-lang_ru;;*);
+<- chemical_element;
+<- sc_node_not_relation;
+
+<- rrel_key_sc_element: definition_of_hydrogenium
+(* 
+	=> nrel_main_idtf: [Опр. (атом водорода)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Водород</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>    первой  <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 1-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+=> nrel_being_in_body: cell;
+=> nrel_half_life: 12_3_years;
+
+=> nrel_allotropic_modification: ...
+(*
+	-> ortho_hydrogen;;
+	-> para_hydrogen;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (атом водорода)] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/elem_H.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_periodic_number: one;
+
+<- gas;
+<- nonmetal;
+<- atmophile;
+
+<- group_one;
+<- period_one;
+<- oxidation_state_plus_one;
+<- valence_one;
+
+=> nrel_isotopic_modification: ...
+(*
+	-> protius;;
+	-> deuterium;;
+	-> tritium;;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:fifty_three;;
+	*);;
+*);
+
+=> nrel_electronegativity: two_and_two;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:thirty_two;;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_H;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_H
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (атом водорода, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ 1s<sup>1</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_H <- number;
+=> nrel_main_idtf:[1,00784](*<-lang_ru;; <- lang_en;;*);;

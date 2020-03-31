@@ -1,0 +1,102 @@
+elem_Cu
+=> nrel_main_idtf:
+	[cuprum atom](*<- lang_en;;*);
+	[атом меди](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_cuprum
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Cu.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+
+<- group_eleven;
+<- period_four;
+=> nrel_periodic_number: twenty_nine;
+
+<- metal;
+
+<- oxidation_state_plus_three; oxidation_state_plus_two; oxidation_state_plus_one;
+<- valence_three; valence_two; valence_one;
+
+
+=> nrel_atomic_radius: atomic_radius_of_Cu
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:128(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_Cu
+			(* <- number;;
+			=> nrel_main_idtf:[1,9](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+
+=> nrel_covalent_radius: covalent_radius_of_Cu
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:117(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: atomic_mass_of_Cu
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Cu;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Cu
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (атом меди, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Ar] 3d<sup>10</sup>4s<sup>1</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Cu
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом меди)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(cuprum atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Cuprum.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+atomic_mass_Cu <- number;
+=> nrel_main_idtf:[63,546(3)](*<-lang_ru;; <- lang_en;;*);;
+
+Definition_of_cuprum
+=> nrel_main_idtf:
+	[Опр.(атом меди)]
+	(* <- lang_ru;;	*);
+	[Def.(cuprum atom)]
+	(* <- lang_en;;	*);;

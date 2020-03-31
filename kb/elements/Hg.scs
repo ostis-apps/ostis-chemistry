@@ -1,0 +1,98 @@
+elem_Hg
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_hydrargyrum
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Hg.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_twelve;
+<- period_six;
+=> nrel_periodic_number: eighty;
+
+<- metal;
+
+<= nrel_inclusion: oxidation_state_plus_two; 
+<= nrel_inclusion: valence_two;
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:176(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Hg;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:149(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Hg;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Hg
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ртуть, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Hg] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 6s<sup>2</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис. (химический элемент ртуть)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Hydrargyrum.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+
+Definition_of_hydrargyrum
+=> nrel_main_idtf:
+	[Опр. (ртуть)]
+	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Hg <- number;
+=> nrel_main_idtf:[200,59](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Hg <- number;
+=> nrel_main_idtf:[2](*<-lang_ru;; <- lang_en;;*);;

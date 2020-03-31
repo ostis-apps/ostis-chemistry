@@ -1,0 +1,75 @@
+elem_Ds
+=> nrel_main_idtf:
+	[darmstadtium atom](*<- lang_en;;*);
+	[атом дармштадтия](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_darmstadtium
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Ds.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+
+<- group_ten;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_ten;
+
+<- metal;
+
+
+=> nrel_atomic_mass: atomic_mass_of_Ds
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Ds;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Ds
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (атом дармштадтия, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Rn] 5f<sup>14</sup>6d<sup>8</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	illustration_of_Ds
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(атом дармштадтия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(darmstadtium atom)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Darmstadtium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+atomic_mass_Ds <- number;
+=> nrel_main_idtf:[271](*<-lang_ru;; <- lang_en;;*);;
+
+Definition_of_darmstadtium
+=> nrel_main_idtf:
+	[Опр.(атом дармштадтия)]
+	(* <- lang_ru;;	*);
+	[Def.(darmstadtium atom)]
+	(* <- lang_en;;	*);;
