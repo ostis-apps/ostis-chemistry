@@ -11,7 +11,7 @@ chemical_sciences;
 physical_chemistry;
 chemical_physics;
 electrochemistry;
-high_molecular_compounds;
+chemistry_high_molecular_compounds;
 chemistry_of_organoelement_compounds;
 high_energy_chemistry;
 bioorganic_chemistry;
@@ -25,7 +25,6 @@ biogeochemistry;
 agrochemistry;
 analytical_chemistry;
 medical_chemistry;
-bioengineering;
 mathematical_chemistry;
 quantum_chemistry;
 computational_chemistry;
@@ -59,7 +58,7 @@ chemical_sciences
 ->physical_chemistry;;
 ->chemical_physics;;
 ->electrochemistry;;
-->high_molecular_compounds;;
+->chemistry_high_molecular_compounds;;
 ->chemistry_of_organoelement_compounds;;
 ->high_energy_chemistry;;
 ->bioorganic_chemistry;;
@@ -73,7 +72,6 @@ chemical_sciences
 ->agrochemistry;;
 ->analytical_chemistry;;
 ->medical_chemistry;;
-->bioengineering;;
 ->mathematical_chemistry;;
 ->quantum_chemistry;;
 ->computational_chemistry;;
@@ -96,57 +94,6 @@ subdividing_by_object
     (* <-lang_ru;; *);
     [Partitioning by subject]
     (* <-lang_en;; *);;
-
-physical_chemistry
-=>nrel_main_idtf:
-[физическая химия](* <-lang_ru;;*);
-    [physical_chemistry](* <-lang_en;;*);
-
-<=nrel_subdividing:
-    subdividing_by_object_and_methods_of_research
-(*
-->electrochemistry;;
-->photochemistry;;
-->high_molecular_compounds;;
-->colloid_chemistry;;
-->quantum_chemistry;;
-->radiochemistry;;
-->thermochemistry;;
-*);
-
-<= nrel_intersection:...
-(* 
-    -> physics; chemistry;;
-*);
-
-<- rrel_key_sc_element:...
-(*
-    <-definition;;
-        <=nrel_using_constants:...(*
-            ->physical_chemistry;;
-            ->chemistry;;
-            ->science;;
-            ->chemical_substance;;
-            *);;
-    => nrel_main_idtf:
-    [Опр.(физическая химия)](* <- lang_ru;;*);
-    [Def.(physical chemistry)](* <- lang_en;;*);;
-        <= nrel_sc_text_translation:...(*
-        -> rrel_example: "file://html/physical_chemistry.html"(* <-lang_ru;; *);; 
-        -> rrel_example: "file://html/physical_chemistry_en.html"(* <-lang_en;; *);;
-    *);;
-*);
-
-<-rrel_key_sc_element:...(*
-    <-explanation;;
-	->rrel_key_sc_element:
-    chemistry;;
-	=>nrel_main_idtf:
-	[Утв. (химия)](* <-lang_ru;;*);
-	[Expl. (chemistry)](* <-lang_en;;*);;
-	-> rrel_example: "file://html/physical_chemistry_1.html"(* <-lang_ru;;*);;
-	-> rrel_example: "file://html/physical_chemistry_1_en.html"(* <-lang.en;; *);;
-*);;
 
 subdividing_by_object_and_methods_of_research
 =>nrel_main_idtf:
