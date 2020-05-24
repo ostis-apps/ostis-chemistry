@@ -8,7 +8,7 @@ nonanol=> nrel_idtf:[C9H20O](* <- lang_en;; *);;
 
 nonanol<=nrel_intramolecular_dehydration:nonane;;
 
-way->peroral_way;;
+
 nonanol<=nrel_poisoning_way:peroral_way;;
 
 aromatic_alcohols=>nrel_inclusion:nonanol;;

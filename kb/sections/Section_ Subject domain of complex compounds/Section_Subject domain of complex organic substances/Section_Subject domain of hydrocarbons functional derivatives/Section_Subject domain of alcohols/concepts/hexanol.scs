@@ -12,7 +12,7 @@ higher_fatty_alcohols=>nrel_inclusion:hexanol;;
 
 hexanol<=nrel_intermolecular_dehydration:hexane;;
 
-way->peroral_way;;
+
 hexanol<=nrel_poisoning_way:peroral_way;;
 
 organic_artificial_poison=>nrel_inclusion:hexanol;;

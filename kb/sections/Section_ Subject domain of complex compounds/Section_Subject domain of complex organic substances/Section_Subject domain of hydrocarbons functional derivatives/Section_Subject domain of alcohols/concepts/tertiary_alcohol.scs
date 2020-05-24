@@ -7,7 +7,7 @@ tertiary_alcohol=> nrel_idtf:[CH3CH2CH2CH2—OH](* <- lang_en;; *);;
 
 
 unsaturated_alcohols=>nrel_inclusion:tertiary_alcohol;;
-way->peroral_way;;
+
 tertiary_alcohol<=nrel_poisoning_way:peroral_way;;
 higher_fatty_alcohols=>nrel_inclusion:tertiary_alcohol;;
 organic_artificial_poison=>nrel_inclusion:tertiary_alcohol;;

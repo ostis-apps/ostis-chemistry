@@ -9,7 +9,7 @@ decanol=> nrel_idtf:[C10H22O](* <- lang_en;; *);;
 
 decanol<=nrel_intermolecular_dehydration:decane;;
 
-way->peroral_way;;
+
 decanol<=nrel_poisoning_way:peroral_way;;
 
 organic_artificial_poison=>nrel_inclusion:decanol;;

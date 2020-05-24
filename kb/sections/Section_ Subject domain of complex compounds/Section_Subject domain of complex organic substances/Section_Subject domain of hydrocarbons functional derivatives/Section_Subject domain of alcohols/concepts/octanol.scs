@@ -13,7 +13,7 @@ triatomic_alcohol=>nrel_inclusion:octanol;;
 higher_fatty_alcohols=>nrel_inclusion:octanol;;
 
 
-way->peroral_way;;
+
 octanol<=nrel_poisoning_way:peroral_way;;
 organic_artificial_poison=>nrel_inclusion:octanol;;
 rrel_liquid_solvent=>nrel_inclusion:octanol;;

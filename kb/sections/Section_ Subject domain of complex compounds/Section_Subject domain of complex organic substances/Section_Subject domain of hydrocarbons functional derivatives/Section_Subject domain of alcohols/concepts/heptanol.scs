@@ -13,7 +13,7 @@ triatomic_alcohol=>nrel_inclusion:heptanol;;
 higher_fatty_alcohols=>nrel_inclusion:heptanol;;
 
 
-way->peroral_way;;
+
 heptanol<=nrel_poisoning_way:peroral_way;;
 organic_artificial_poison=>nrel_inclusion:heptanol;;
 rrel_liquid_solvent=>nrel_inclusion:heptanol;;

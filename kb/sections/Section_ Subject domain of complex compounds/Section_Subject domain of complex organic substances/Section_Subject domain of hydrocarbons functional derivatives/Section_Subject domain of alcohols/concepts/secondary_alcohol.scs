@@ -8,7 +8,7 @@ secondary_alcohol=> nrel_idtf:[СH3–CH2–OH](* <- lang_en;; *);;
 
 saturated_alcohols=>nrel_inclusion:secondary_alcohol;;
 secondary_alcohol<=nrel_intermolecular_dehydration:alcohol;;
-way->peroral_way;;
+
 secondary_alcohol<=nrel_poisoning_way:peroral_way;;
 higher_fatty_alcohols=>nrel_inclusion:secondary_alcohol;;
 organic_artificial_poison=>nrel_inclusion:secondary_alcohol;;

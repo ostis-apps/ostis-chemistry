@@ -8,7 +8,7 @@ pentanol=> nrel_idtf:[C₅H₁₁OH](* <- lang_en;; *);;
 
 saturated_alcohols=>nrel_inclusion:pentanol;;
 pentanol<=nrel_intermolecular_dehydration:pentane;;
-way->peroral_way;;
+
 pentanol<=nrel_poisoning_way:peroral_way;;
 higher_fatty_alcohols=>nrel_inclusion:pentanol;;
 organic_artificial_poison=>nrel_inclusion:pentanol;;

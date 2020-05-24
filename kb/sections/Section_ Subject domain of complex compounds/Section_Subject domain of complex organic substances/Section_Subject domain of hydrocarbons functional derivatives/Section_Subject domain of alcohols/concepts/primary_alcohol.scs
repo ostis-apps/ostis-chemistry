@@ -7,7 +7,7 @@ primary_alcohol=> nrel_idtf:[СH3–CH2–CH2–OH](* <- lang_en;; *);;
 
 
 saturated_alcohols=>nrel_inclusion:primary_alcohol;;
-way->peroral_way;;
+
 primary_alcohol<=nrel_poisoning_way:peroral_way;;
 higher_fatty_alcohols=>nrel_inclusion:primary_alcohol;;
 organic_artificial_poison=>nrel_inclusion:primary_alcohol;;
