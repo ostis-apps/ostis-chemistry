@@ -21,6 +21,15 @@ subject_domain_of_alcohols
     monohydric_alcohol;
     ethanol;
     methanol;
+    decanol;
+    octanol;
+    heptanol;
+    nonanol;
+primary_alcohol;
+secondary_alcohol;
+tertiary_alcohol;
+    hexanol;
+    pentanol;
     amyl_alcohol;
     propanol;
     butanol;
@@ -41,6 +50,14 @@ alcohol
     -> dihydric_alcohol;;
     -> triatomic_alcohol;;
     -> polyhydric_alcohol;;
+  *);
+<= nrel_subdividing:
+  ...
+  (*
+    => nrel_main_idtf: [По строению радикала] (* <- lang_ru;; *);;
+    -> aromatic_alcohols;;
+    -> unsaturated_alcohols;;
+    -> saturated_alcohols;;
   *);
 
   <- rrel_key_sc_element:

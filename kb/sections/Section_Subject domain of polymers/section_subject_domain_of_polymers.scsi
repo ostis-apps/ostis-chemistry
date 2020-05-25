@@ -1145,61 +1145,7 @@ homopolymer
 	*);;
 *);;
 
-inorganic_polymer
-<- sc_node_not_relation;
-=> nrel_main_idtf:[неорганический полимер](* <- lang_ru;; *);
-=> nrel_main_idtf:[inorganic polymer](* <- lang_en;; *);
 
-<-polymer;
-
-<- rrel_key_sc_element:
-...
-(*
-	<- definition;;
-	=> nrel_main_idtf:
-		[Опр. (неорганический полимер)](* <- lang_ru;; *);
-		[Def. (inorganic polymer)](* <- lang_en;; *);;
-	<= nrel_using_constants:...
-	(*
-		-> polymer;;
-	*);;
-	<= nrel_sc_text_translation:...
-	(*
-		-> rrel_example:[<b><sc_element sys_idtf="inorganic_polymer">Неорганические полимеры</sc_element></b> — <sc_element sys_idtf="polymer">полимеры</sc_element>, не содержащие в повторяющемся звене связей C-C, но способные содержать органический радикал как боковые заместители.](* <- lang_ru;; => nrel_format: format_html;; *);;
-		-> rrel_example:[<b><sc_element sys_idtf="inorganic_polymer">Inorganic polymers</sc_element></b> are <sc_element sys_idtf="polymer">polymers</sc_element> that do not contain C – C bonds in a repeating link, but are capable of containing an organic radical as side substitutes.](* <- lang_en;; => nrel_format: format_html;; *);;
-	*);;
-*);
-
-<- rrel_key_sc_element:...
-(*
-	<- explanation;;
-	=> nrel_main_idtf:
-		[Утв. (неогранический полимер, классификация*)](* <- lang_ru;; *);
-		[Stat. (inorganic polymer, classification*)](* <- lang_en;; *);;
-	<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[<ul><li>Гомоцепные полимеры<br>
-Способностью к образованию гомоцепных неорганических полимеров обладают только углерод (аллотропная модификация карбин) и халькогены (пластическая модификация серы).
-<li>Гетероцепные полимеры<br>
-К образованию гетероцепных неорганических полимеров общей формулой [-X-Y-]n способны многие пары элементов, например кремний и кислород (силикон), ртуть и сера (киноварь).](* <- lang_ru;; => nrel_format: format_html;;*);;
-			-> rrel_example:[<ul><li>Homochain polymers<br>
-Only carbon (allotropic modification of carbin) and chalcogenes (plastic modification of sulfur) possess the ability to form homochain inorganic polymers.
-<li>Hetero type polymers<br>
-Many pairs of elements, such as silicon and oxygen (silicone), mercury and sulfur (cinnabar), are capable of forming heterochain inorganic polymers of the general formula [-X-Y-] n.](* <- lang_en;; => nrel_format: format_html;;*);;
-		*);;
-*);
-
-<- rrel_key_sc_element:...
-(*
-	<- illustration;;
-	=> nrel_main_idtf:
-		[Рис. (неорганический полимер)](* <- lang_ru;; *);
-		[Pic. (inorganic_polymer)](* <- lang_en;; *);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example: "file://image/inorganic_polymer.png"(* => nrel_format: format_png;;*);;
-		*);;
-*);;
 
 nrel_copolymerization_reaction
 <- sc_node_norole_relation;
