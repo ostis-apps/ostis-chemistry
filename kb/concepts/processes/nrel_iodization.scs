@@ -38,16 +38,6 @@ statement ->...
 		};;
 *);;
 
-relation => nrel_inclusion: oriented_relation;; 
-relation => nrel_inclusion: norole_relation;;
-oriented_relation -> nrel_iodization;;
-norole_relation-> nrel_iodization;;
-binary_relation => nrel_inclusion: antireflexive_relation;;
-binary_relation => nrel_inclusion: antitransitive_relation;;
-binary_relation => nrel_inclusion: antisymmetric_relation;; 
-antireflexive_relation -> nrel_iodization;; 
-antitransitive_relation -> nrel_iodization;;
-antisymmetric_relation -> nrel_iodization;;
 
 
 nrel_iodization => nrel_first_domain: chemical_substance;;
