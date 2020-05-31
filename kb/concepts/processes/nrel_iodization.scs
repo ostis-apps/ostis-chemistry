@@ -37,20 +37,3 @@ statement ->...
 		iodide_ion
 		};;
 *);;
-
-
-
-nrel_iodization => nrel_first_domain: chemical_substance;;
-nrel_iodization => nrel_second_domain: chemical_substance;;
-
-
-sc_node_not_relation->arity;;
-sc_node_not_relation->arity_2;;
-arity_2=>nrel_measurement:2;;
-arity_2->nrel_iodization;;
-arity_2<-arity;;
-number->2;;
-
-chemical_substance->propamide;;
-chemical_substance->iodine_propamide;;
-iodine_propamide<=nrel_iodization:propamide;;
