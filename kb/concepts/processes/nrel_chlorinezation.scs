@@ -46,17 +46,3 @@ illustration -> ...
 *);;
 
 
-nrel_chlorinezation => nrel_first_domain: chemical_substance;;
-nrel_chlorinezation => nrel_second_domain: chemical_substance;;
-
-
-sc_node_not_relation->arity;;
-sc_node_not_relation->arity_2;;
-arity_2=>nrel_measurement:2;;
-arity_2->nrel_chlorinezation;;
-arity_2<-arity;;
-number->2;;
-
-chemical_substance->propamide;;
-chemical_substance->chlorine_propamide;;
-chlorine_propamide<=nrel_chlorinezation:propamide;;
