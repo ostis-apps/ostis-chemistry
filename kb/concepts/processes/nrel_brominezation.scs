@@ -45,17 +45,3 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(бромирование*)](*<- lang_ru;;*);;
 *);;
 
-nrel_brominezation => nrel_first_domain: chemical_substance;;
-nrel_brominezation => nrel_second_domain: chemical_substance;;
-
-
-sc_node_not_relation->arity;;
-sc_node_not_relation->arity_2;;
-arity_2=>nrel_measurement:2;;
-arity_2->nrel_brominezation;;
-arity_2<-arity;;
-number->2;;
-
-chemical_substance->propamide;;
-chemical_substance->bromine_propamide;;
-bromine_propamide<=nrel_brominezation:propamide;;
