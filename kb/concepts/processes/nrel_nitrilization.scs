@@ -44,3 +44,14 @@ illustration -> ...
 	<= nrel_sc_text_translation: ...(*->"file://img/nrel_nitrilization.jpg";;*);;
 	=> nrel_main_idtf: [Рисунок(бромирование*)](*<- lang_ru;;*);;
 *);;
+
+sc_node_not_relation->arity;;
+sc_node_not_relation->arity_2;;
+arity_2=>nrel_measurement:2;;
+arity_2->nrel_nitrilization;;
+arity_2<-arity;;
+number->2;;
+
+chemical_substance->propamide;;
+chemical_substance->pronitrideamide;;
+pronitrideamide<=nrel_nitrilization:propamide;;
