@@ -45,13 +45,10 @@ illustration -> ...
 action->dizziness;;
 dizziness<=nrel_side_effect:clonidine;;
 
-relation => nrel_inclusion: oriented_relation;; 
-relation => nrel_inclusion: norole_relation;;
+
 oriented_relation -> nrel_side_effect;;
 norole_relation-> nrel_side_effect;;
-binary_relation => nrel_inclusion: antireflexive_relation;;
-binary_relation => nrel_inclusion: antitransitive_relation;;
-binary_relation => nrel_inclusion: antisymmetric_relation;; 
+ 
 antireflexive_relation -> nrel_side_effect;; 
 antitransitive_relation -> nrel_side_effect;;
 antisymmetric_relation -> nrel_side_effect;;
@@ -68,12 +65,8 @@ action
 };; 
 *);; 
 
-sc_node_not_relation->arity;;
-sc_node_not_relation->arity_2;;
-arity_2=>nrel_measurement:2;;
+
 arity_2->nrel_side_effect;;
-arity_2<-arity;;
-number->2;;
 
 
 

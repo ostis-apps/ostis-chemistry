@@ -38,13 +38,9 @@ chemical_substance->digoxyl;;
 action->venous_congestion_reduction;;
 venous_congestion_reduction<=nrel_indirect_action:digoxyl;;
 
-relation => nrel_inclusion: oriented_relation;; 
-relation => nrel_inclusion: norole_relation;;
+
 oriented_relation -> nrel_indirect_action;;
 norole_relation-> nrel_indirect_action;;
-binary_relation => nrel_inclusion: antireflexive_relation;;
-binary_relation => nrel_inclusion: antitransitive_relation;;
-binary_relation => nrel_inclusion: antisymmetric_relation;; 
 antireflexive_relation -> nrel_indirect_action;; 
 antitransitive_relation -> nrel_indirect_action;;
 antisymmetric_relation -> nrel_indirect_action;;
@@ -60,12 +56,8 @@ action
 };; 
 *);; 
 
-sc_node_not_relation->arity;;
-sc_node_not_relation->arity_2;;
-arity_2=>nrel_measurement:2;;
 arity_2->nrel_indirect_action;;
-arity_2<-arity;;
-number->2;;
+
 
 
 digoxyl=> nrel_main_idtf:[дигоксин](* <- lang_ru;; *);;

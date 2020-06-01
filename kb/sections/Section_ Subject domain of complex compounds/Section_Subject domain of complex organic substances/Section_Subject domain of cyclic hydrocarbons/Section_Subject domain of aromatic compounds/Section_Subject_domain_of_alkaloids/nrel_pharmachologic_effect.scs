@@ -42,13 +42,9 @@ chemical_substance->clonidine;;
 action->antihypertensive_effect;;
 antihypertensive_effect<=nrel_pharmachologic_effect:clonidine;;
 
-relation => nrel_inclusion: oriented_relation;; 
-relation => nrel_inclusion: norole_relation;;
+
 oriented_relation -> nrel_pharmachologic_effect;;
-norole_relation-> nrel_pharmachologic_effect;;
-binary_relation => nrel_inclusion: antireflexive_relation;;
-binary_relation => nrel_inclusion: antitransitive_relation;;
-binary_relation => nrel_inclusion: antisymmetric_relation;; 
+norole_relation-> nrel_pharmachologic_effect;; 
 antireflexive_relation -> nrel_pharmachologic_effect;; 
 antitransitive_relation -> nrel_pharmachologic_effect;;
 antisymmetric_relation -> nrel_pharmachologic_effect;;
@@ -64,13 +60,7 @@ chemical_substance;
 action 
 };; 
 *);; 
-
-sc_node_not_relation->arity;;
-sc_node_not_relation->arity_2;;
-arity_2=>nrel_measurement:2;;
 arity_2->nrel_pharmachologic_effect;;
-arity_2<-arity;;
-number->2;;
 
 
 clonidine=> nrel_main_idtf:[клофелин](* <- lang_ru;; *);;

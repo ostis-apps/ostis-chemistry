@@ -42,13 +42,9 @@ chemical_substance->ibuprofen;;
 action->distracting_action;;
 distracting_action<=nrel_local_action:ibuprofen;;
 
-relation => nrel_inclusion: oriented_relation;; 
-relation => nrel_inclusion: norole_relation;;
+
 oriented_relation -> nrel_local_action;;
 norole_relation-> nrel_local_action;;
-binary_relation => nrel_inclusion: antireflexive_relation;;
-binary_relation => nrel_inclusion: antitransitive_relation;;
-binary_relation => nrel_inclusion: antisymmetric_relation;; 
 antireflexive_relation -> nrel_local_action;; 
 antitransitive_relation -> nrel_local_action;;
 antisymmetric_relation -> nrel_local_action;;
@@ -64,12 +60,7 @@ action
 };; 
 *);; 
 
-sc_node_not_relation->arity;;
-sc_node_not_relation->arity_2;;
-arity_2=>nrel_measurement:2;;
 arity_2->nrel_local_action;;
-arity_2<-arity;;
-number->2;;
 
 
 ibuprofen=> nrel_main_idtf:[ибупрофен](* <- lang_ru;; *);;
